@@ -1,8 +1,11 @@
 # Board game app
 
 This app is made made with React.js and Redux.
+Also using `react-redux` and `redux-thunk` packages.
 
-#### Dislaimer: Using yarn as package manager, not npm
+Using the awesome [Board Game Atlas](https://www.boardgameatlas.com/api/docs) API.
+
+#### Dislaimer: Using yarn as package manager, not npm.
 
 ---
 
