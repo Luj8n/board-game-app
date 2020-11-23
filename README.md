@@ -1,2 +1,30 @@
-# board-game-app
-This app will be made with React.js and Redux.
+# Board game app
+
+This app is made made with React.js and Redux.
+
+#### Dislaimer: Using yarn as package manager, not npm
+
+---
+
+## To run the application
+
+```bash
+# if you don't have yarn installed
+npm install -g yarn
+
+# to install dependencies
+yarn install
+
+# to start the app
+yarn start
+```
+
+This runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+---
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
