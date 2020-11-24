@@ -1,0 +1,10 @@
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bar {
+  text-decoration: none;
+  outline: none;
+}

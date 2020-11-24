@@ -1,38 +1,15 @@
-import React, { useState } from "react";
-import { connect } from "react-redux";
-import { searchGame } from "../redux/actions";
-import { getGames } from "../redux/selectors";
-import "./app.css";
+import React, { useEffect } from "react";
+import Container from "../components/Container";
+import Search from "../components/Search";
+import styles from "./main.module.css";
 
-function App({ findGame, games }) {
-  const [input, setInput] = useState("");
-
-  const handleInput = (e) => {
-    setInput(e.target.value);
-  };
-
-  const queryInput = (e) => {
-    findGame(input);
-  };
-
+function App() {
   return (
-    <div>
-      <input type="text" value={input} onChange={handleInput}></input>
-      <button onClick={queryInput}>Fetch games</button>
+    <div className={styles.app}>
+      <Search />
+      <Container />
     </div>
   );
 }
 
-const mapStateToProps = (state) => {
-  return {
-    games: getGames(state),
-  };
-};
-
-const mapDispatchToProps = (dispatch) => {
-  return {
-    findGame: (title) => dispatch(searchGame(title)),
-  };
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;
