@@ -21,7 +21,7 @@ function setLoading(payload) {
 export function searchGame(name) {
   return async (dispatch) => {
     dispatch(setLoading(true));
-    fetch(`https://api.boardgameatlas.com/api/search?name=${name}&client_id=23p6vaWAJk`)
+    fetch(`https://api.boardgameatlas.com/api/search?name=${name}&client_id=${process.env.REACT_APP_CLIENT_ID}`)
       .then((response) => response.json())
       .then((data) => {
         console.log(data);

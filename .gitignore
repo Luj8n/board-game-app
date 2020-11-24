@@ -1,11 +1,8 @@
 # dependencies
 /node_modules
 
-# testing
-/coverage
-
-# production
-/build
+# api keys
+.env
 
 # misc
 yarn-debug.log*
