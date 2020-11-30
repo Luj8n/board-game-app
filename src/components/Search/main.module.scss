@@ -1,11 +1,68 @@
-.search {
-  margin-top: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@mixin Montserrat {
+  font-family: "Montserrat", sans-serif;
 }
 
-.bar {
+$height: 50px;
+$textSize: 27px;
+$searchSize: 18px;
+$iconSize: 23px;
+$textColor: #242424;
+$borderColor: #7e1e86;
+$searchBarColor: #f2e1ff;
+$buttonColor: #cfc0db;
+$buttonHoverColor: #bfafce;
+
+@mixin flex($justifyContent) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: $justifyContent;
+}
+
+.search {
+  @include flex(space-between);
+  align-self: center;
+  width: 30%;
+  height: $height;
+  margin-top: 50px;
+  padding: 0 15px;
+  background-color: $searchBarColor;
+  border-radius: 50px;
+  border: 5px solid $borderColor;
+}
+
+.searchBar {
   text-decoration: none;
   outline: none;
+  background: none;
+  width: 80%;
+  height: 90%;
+  font-size: $textSize;
+  color: $textColor;
+  border: none;
+}
+
+.button {
+  @include Montserrat();
+  @include flex(space-evenly);
+  width: 20%;
+  height: 70%;
+  margin-right: -8px;
+  color: $textColor;
+  font-size: $searchSize;
+  background-color: $buttonColor;
+  border-radius: 50px;
+  border: 2px solid $borderColor;
+  transition: all ease-in-out 0.2s;
+  &:hover {
+    cursor: pointer;
+    background-color: $buttonHoverColor;
+  }
+}
+
+.searchIcon {
+  font-size: $iconSize;
+  color: $textColor;
 }
