@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@mixin Montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+$fontColor: #a7a7a7;
+$footerColor: #14001a;
+$footerheight: 35px;
+
+@mixin flex($justifyContent) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: $justifyContent;
+}
+
+.footer {
+  @include Montserrat();
+  @include flex(space-around);
+  position: absolute;
+  width: 100%;
+  height: $footerheight;
+  margin-top: $footerheight;
+  bottom: 0;
+  background-color: $footerColor;
+  color: $fontColor;
+
+  a {
+    // text-decoration: underline;
+    color: $fontColor;
+  }
+}
