@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { getGames } from "../../redux/selectors";
 import Listing from "../Listing";
-import styles from "./main.module.css";
+import styles from "./main.module.scss";
 
 function Container({ games }) {
   console.log(games);

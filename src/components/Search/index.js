@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import { searchGame } from "../../redux/actions";
 import { getGames } from "../../redux/selectors";
-import styles from "./main.module.css";
+import styles from "./main.module.scss";
 
 function Search({ findGame, games }) {
   const [input, setInput] = useState("");
