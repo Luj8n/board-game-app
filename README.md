@@ -3,7 +3,7 @@
 This app is made made with `react` and `redux`.
 Using `react-redux` (as a binder) and `redux-thunk` (as middleware).
 
-#### Here is the [Live app](https://board-game-app.glitch.me/), made possible with [Glitch](glitch.com).
+#### Here is the [Live app](https://luj8n-board-game-app.herokuapp.com/), using [Heroku](https://heroku.com).
 
 Using the awesome [Board Game Atlas](https://www.boardgameatlas.com/api/docs) API.
 
