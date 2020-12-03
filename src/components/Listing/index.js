@@ -10,7 +10,7 @@ function Listing({ info }) {
       <div className={styles.info}>
         <span className={styles.title}>{info.name}</span>
         <div className={styles.otherInfo}>
-          <span className={styles.price}>Price: {info.price == "0.00" ? "Unknown" : `${info.price}$`}</span>
+          <span className={styles.price}>Price: {info.price === "0.00" ? "Unknown" : `${info.price}$`}</span>
           <span className={styles.price}>
             Recommended players: {info.min_players ? `${info.min_players} - ${info.max_players}` : `Unknown`}
           </span>
